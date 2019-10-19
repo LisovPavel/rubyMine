@@ -1,0 +1,50 @@
+<templateSet group="mySnipets">
+  <template name="cl" value="console.log('$Comment$: ', $Variable$)" description="console.log('$', $)" toReformat="false" toShortenFQNames="true">
+    <variable name="Comment" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="Variable" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="clc" value="console.log('%c $Comment$: ', 'color: blue; font-weight: bold;', $Variable$)" description="console.log with css" toReformat="false" toShortenFQNames="true">
+    <variable name="Comment" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="Variable" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="ir" value="import React, { Component } from 'react';" description="Import react" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="id" value="import $Module$ from &quot;./$SRC$/$Module$&quot;;" description="import default from" toReformat="false" toShortenFQNames="true">
+    <variable name="Module" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="SRC" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="icf" value="import { $Component$ } from './$SRC$';" description="Import { component } from" toReformat="false" toShortenFQNames="true">
+    <variable name="Component" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="SRC" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="erc" value="export default class $Name$extends Component {&#10;&#10;    render () {&#10;        return (&#10;            $JSX$&#10;        )&#10;    }&#10;}" shortcut="SPACE" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="Name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="JSX" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="edf" value="export default function $Name$(props) {&#10;    return (&#10;        $JSX$&#10;    )&#10;}" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="Name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="JSX" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+</templateSet>
